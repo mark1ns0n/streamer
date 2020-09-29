@@ -40,3 +40,15 @@ func main() {
   stream.Start().Wait() 
 }
 ```
+
+# Updates
+
+Added
+```shell script
+-hls_flags +program_date_time
+```
+to have tag
+```text
+EXT-X-PROGRAM-DATE-TIME
+```
+in m3u8 playlist to have possibility to see absolute time of stream fragment.

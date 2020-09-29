@@ -73,6 +73,8 @@ func (p Process) Spawn(path, URI string) *exec.Cmd {
 		p.getHLSFlags(),
 		"-f",
 		"hls",
+		"-hls_flags",
+		"+program_date_time",
 		"-segment_list_flags",
 		"live",
 		"-hls_time",
